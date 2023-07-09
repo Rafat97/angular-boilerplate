@@ -1,0 +1,18 @@
+<p>counter module works!</p>
+
+<app-text-box [text]="counter + ''"></app-text-box>
+<app-button [class]="'p-4 bg-black text-white'">
+  <app-text-box
+    [class]="'text-sm'"
+    [text]="'Button no action'"
+  ></app-text-box>
+</app-button>
+<br />
+<div class="flex flex-row gap-2 pt-3">
+  <app-button (onClick)="increment()">
+    <app-text-box [text]="'Increment'"></app-text-box>
+  </app-button>
+  <app-button (onClick)="decrement()">
+    <app-text-box [text]="'Decrement'"></app-text-box>
+  </app-button>
+</div>
