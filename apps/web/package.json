@@ -19,7 +19,9 @@
   },
   "private": true,
   "workspaces": {
-    "nohoist": ["**"]
+    "nohoist": [
+      "**"
+    ]
   },
   "dependencies": {
     "@angular/animations": "^16.1.0",
