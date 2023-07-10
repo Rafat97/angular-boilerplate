@@ -15,7 +15,8 @@
         "VisualStudioExptTeam.intellicode-api-usage-examples",
         "streetsidesoftware.code-spell-checker",
         "eamodio.gitlens",
-        "ms-vscode-remote.remote-containers"
+        "ms-vscode-remote.remote-containers",
+        "nrwl.angular-console"
       ]
     }
   }

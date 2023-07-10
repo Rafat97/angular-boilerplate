@@ -20,7 +20,8 @@
     "module": "ES2022",
     "useDefineForClassFields": false,
     "paths": {
-      "@selfApp/*": ["src/app/*"]
+      "@selfApp/*": ["src/app/*"],
+      "@env/*": ["src/environments/*"]
     },
     "lib": ["ES2022", "dom"]
   },
