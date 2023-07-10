@@ -7,15 +7,15 @@ import { CounterService } from './counter.service';
   styleUrls: ['./counter.component.scss'],
 })
 export class CounterComponent {
-  counter: number = 0;
+  @Input() counter = 0;
 
   constructor(public counterService: CounterService) {}
 
-  increment() {
+  increment(): void {
     this.counter = this.counterService.increment();
   }
 
-  decrement() {
+  decrement(): void {
     this.counter = this.counterService.decrement();
   }
 }

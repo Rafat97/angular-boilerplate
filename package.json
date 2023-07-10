@@ -10,7 +10,9 @@
     "watch": "ng build --watch --configuration development",
     "test:headless": "ng test --watch=false --browsers ChromeHeadless",
     "test": "ng test",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "private": true,
   "dependencies": {
@@ -22,7 +24,7 @@
     "@angular/platform-browser": "^16.1.0",
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.0.0-alpha.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -51,6 +53,7 @@
     "ng-packagr": "^16.0.0",
     "postcss": "^8.4.25",
     "prettier": "3.0.0",
+    "prettier-eslint": "^15.0.1",
     "tailwindcss": "^3.3.2",
     "typescript": "~5.1.3"
   }

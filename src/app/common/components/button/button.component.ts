@@ -6,10 +6,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
-  @Input() class: string = 'p-3 bg-purple-700 rounded-lg text-white';
+  @Input() class = 'p-3 bg-purple-700 rounded-lg text-white';
   @Output() onClick = new EventEmitter<Event>();
 
-  click(event: Event) {
+  click(event: Event): void {
     this.onClick.emit(event);
   }
 }

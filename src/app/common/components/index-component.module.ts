@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './button/button.component';
 import { TextBoxComponent } from './text-box/text-box.component';
 
-const UiComponent = [ButtonComponent, TextBoxComponent];
+const uiComponent = [ButtonComponent, TextBoxComponent];
 
 @NgModule({
-  declarations: [...UiComponent],
+  declarations: [...uiComponent],
   imports: [CommonModule],
-  exports: [...UiComponent],
+  exports: [...uiComponent],
 })
 export class IndexComponentModule {}

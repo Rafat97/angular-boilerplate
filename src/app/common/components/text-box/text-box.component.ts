@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./text-box.component.scss'],
 })
 export class TextBoxComponent {
-  @Input() text: string = 'Default Text';
-  @Input() class: string = 'text-xl';
+  @Input() text = 'Default Text';
+  @Input() class = 'text-xl';
 }

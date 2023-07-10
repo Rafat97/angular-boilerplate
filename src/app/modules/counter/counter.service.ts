@@ -4,17 +4,19 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class CounterService {
-  private counter: number = 0;
+  private _counter = 0;
 
-  constructor() {}
-
-  increment() {
-    this.counter = this.counter + 1;
-    return this.counter;
+  constructor() {
+    // initialize
   }
 
-  decrement() {
-    this.counter = this.counter - 1;
-    return this.counter;
+  increment(): number {
+    this._counter = this._counter + 1;
+    return this._counter;
+  }
+
+  decrement(): number {
+    this._counter = this._counter - 1;
+    return this._counter;
   }
 }
