@@ -1,17 +1,17 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn workspaces run lint
+pnpm run lint
 echo "######################"
 echo "Successfully compiled Lint"
 echo "######################"
 
-yarn workspaces run format
+pnpm run format
 echo "######################"
 echo "Successfully compiled format"
 echo "######################"
 
-yarn workspaces run test:headless
+pnpm run test
 echo "######################"
 echo "Successfully compiled test"
 echo "######################"

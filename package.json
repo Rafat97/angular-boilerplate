@@ -6,17 +6,25 @@
     ]
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "serve:web": "cd ./apps/web && pnpm run start",
+    "lint:web": "cd ./apps/web && pnpm run lint",
+    "format:web": "cd ./apps/web && pnpm run format",
+    "test:web": "cd ./apps/web && pnpm run test:headless",
+    "start": "npm-run-all -p serve:*",
+    "lint": "npm-run-all -p lint:*",
+    "format": "npm-run-all -p format:*",
+    "test": "npm-run-all -p test:*"
   },
-  "dependencies": {},
   "devDependencies": {
     "husky": "^8.0.0",
+    "npm-run-all": "^4.1.5",
     "rimraf": "^5.0.1"
   },
   "engines": {
     "node": ">=16 <= 18",
     "npm": "please-use-yarn",
-    "pnpm": "please-use-yarn",
+    "pnpm": ">=8",
     "yarn": ">= 1.19.1"
   },
   "private": true
