@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "dev": "ng serve",
+    "clean": "rimraf dist node_modules",
     "build:staging": "ng build --configuration=stage",
     "build:prod": "ng build --configuration=production",
     "build:dev": "ng build --configuration=development",
@@ -62,13 +63,14 @@
     "postcss": "^8.4.25",
     "prettier": "3.0.0",
     "prettier-eslint": "^15.0.1",
+    "rimraf": "^5.0.1",
     "tailwindcss": "^3.3.2",
     "typescript": "~5.1.3"
   },
   "engines": {
     "node": ">=16 <= 18",
     "npm": "please-use-yarn",
-    "pnpm": "please-use-yarn",
+    "pnpm": ">=8",
     "yarn": ">= 1.19.1"
   }
 }
