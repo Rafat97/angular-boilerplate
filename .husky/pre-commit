@@ -1,17 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm run lint
+pnpm run nx:all
 echo "######################"
-echo "Successfully compiled Lint"
-echo "######################"
-
-pnpm run format
-echo "######################"
-echo "Successfully compiled format"
-echo "######################"
-
-pnpm run test
-echo "######################"
-echo "Successfully compiled test"
-echo "######################"
+echo "Successfully run all"
