@@ -1,0 +1,9 @@
+{
+  "name": "angular-boilerplate",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/web/src",
+  "tags": [],
+  "targets": {}
+}

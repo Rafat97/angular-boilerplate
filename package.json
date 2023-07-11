@@ -21,8 +21,11 @@
     "nx:all:log": "nx run-many --targets=lint,format,test:headless,build:stage --all --parallel --skip-nx-cache --verbose"
   },
   "devDependencies": {
+    "@ngrx/schematics": "~16.0.0",
+    "@ngrx/store-devtools": "~16.0.0",
     "@nx/angular": "16.5.1",
     "husky": "^8.0.0",
+    "jasmine-marbles": "~0.9.1",
     "npm-run-all": "^4.1.5",
     "nx": "^16.5.1",
     "rimraf": "^5.0.1"
@@ -33,5 +36,12 @@
     "pnpm": ">=8",
     "yarn": ">= 1.19.1"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@ngrx/component-store": "~16.0.0",
+    "@ngrx/effects": "~16.0.0",
+    "@ngrx/entity": "~16.0.0",
+    "@ngrx/router-store": "~16.0.0",
+    "@ngrx/store": "~16.0.0"
+  }
 }
