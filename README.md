@@ -33,4 +33,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Project High Level Architecture
 
-![Project Architecture](./archi.svg)
+![Project Architecture](./apps/web/archi.svg)
